@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import styled from "styled-components";
-const Popup = styled.header`
+const Popup = header`
   .modal-tit {
     color: #f56753;
     font-size: 3.4vw;

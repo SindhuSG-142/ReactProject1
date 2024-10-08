@@ -23,7 +23,7 @@ const settings = {
 export  function Corouseltwo() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
-  const [slider, setSlider] = React.useState();
+  const [slider, setSlider] = useState();
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
