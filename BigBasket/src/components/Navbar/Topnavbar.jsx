@@ -26,7 +26,7 @@ import { PhoneIcon, SearchIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { ImLocation2 } from "react-icons/im";
 import { AiOutlineUser,AiOutlineClose } from "react-icons/ai";
 import { BsBasket3 } from "react-icons/bs";
-import styles from "./navbar.css";
+import "./navbar.css";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { CartLength } from "../CartLength";
@@ -128,7 +128,7 @@ export const Topnavbar = () => {
                           </TabList>
                           <TabPanels>
                             <TabPanel>
-                              <SignIn  setshow={setShow}/>
+                              <Signin  setshow={setShow}/>
                             </TabPanel>
                             <TabPanel>
                               <Sign/>
@@ -253,7 +253,7 @@ export const Topnavbar = () => {
                       onMouseLeave={onClose}
                     >
                       <Flex>
-                        <div className={styles.borderright}>
+                        <div className="borderright">
                           <Link as={RouterLink} to="/product">
                             <MenuItem borderBottom={"1px solid #e8e8e8"}>
                               Fruits & Vegetables
@@ -293,7 +293,7 @@ export const Topnavbar = () => {
                             View All
                           </MenuItem>
                         </div>
-                        <div className={styles.bg_grey}>
+                        <div className="bg_grey">
                           <MenuItem>Fresh Vegitables</MenuItem>
                           <MenuItem>Herbs & Seasonings</MenuItem>
                           <MenuItem>Fresh Fruits</MenuItem>
@@ -302,7 +302,7 @@ export const Topnavbar = () => {
                           <MenuItem>Exotic Fruits & Veggies</MenuItem>
                           <MenuItem>Flower Bouquets, Bunches</MenuItem>
                         </div>
-                        <div className={styles.borderright}>
+                        <div className="borderright">
                           <MenuItem>Potato, Onion & Tomato</MenuItem>
                           <MenuItem>Cucumber & Capsicum</MenuItem>
                           <MenuItem>Leafy Vegetables</MenuItem>
@@ -312,7 +312,7 @@ export const Topnavbar = () => {
                           <MenuItem>Gourd, Pumpkin, Drumstic</MenuItem>
                           <MenuItem>Specialty</MenuItem>
                         </div>
-                        <div className={styles.fs12}>
+                        <div className="fs12">
                           <MenuItem
                             fontSize={"16"}
                             fontWeight={300}
@@ -334,10 +334,10 @@ export const Topnavbar = () => {
               </Menu>
             </Box>
             <Box>
-              <button className={styles.outlinebutton}>OFFERS</button>
+              <button className="outlinebutton">OFFERS</button>
             </Box>
             <Box>
-              <button className={styles.outlinebutton}>BB SPLECIALITY</button>
+              <button className="outlinebutton">BB SPLECIALITY</button>
             </Box>
           </Flex>
         </Box>

@@ -16,7 +16,7 @@ export const Home = () => {
     <Box  width="100%" margin={"auto"}>
     <Topnavbar/>
       <Box width={"100%"} margin={"auto"}>
-        <Carousel />
+        <Corousel />
       </Box>
       <Box width={"75%"} margin={"auto"} mb={"1rem"}>
         <Flex

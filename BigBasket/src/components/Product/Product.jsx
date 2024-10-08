@@ -16,7 +16,7 @@ import { useSearchParams } from "react-router-dom";
 import { useNavigate } from "react-router";
 import { Topnavbar } from "../Navbar/Topnavbar";
 import axios from "axios";
-import LoadingComp from "./LoadingComp";
+import LoadingComp from "./LoadingComponent";
 export const Product = () => {
   const dispatch = useDispatch();
   const product = useSelector((state) => state.products.product);
