@@ -73,7 +73,7 @@ export const fetchcartaction = (data) => ({
 
 export const fetchtoCart = () => (dispatch) => {
   axios
-    .get("https://web-production-ae8c.up.railway.app/vegetablecart")
+    .get("https://jsonplaceholder.typicode.com/posts")
     // .get("https://rbigbasket.herokuapp.com/vegetablecart")
     .then((res) => {
       // console.log("get", res.data);
@@ -93,7 +93,7 @@ export const removeItemAction = (data) => {
 
 export const removeItem = (id) => (dispatch) => {
   axios
-    .delete(`https://web-production-ae8c.up.railway.app/vegetablecart/${id}`)
+    .delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
     // .delete(`https://rbigbasket.herokuapp.com/vegetablecart/${id}`)
     .then((res) => {
       // console.log(res.data);

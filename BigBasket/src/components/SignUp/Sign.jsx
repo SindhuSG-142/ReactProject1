@@ -35,8 +35,7 @@ import {
         const config = {
           headers: { "Content-type": "application/json" },
         };
-        await axios.post("https://web-production-ae8c.up.railway.app/register",
-          // "http://localhost:7005/register",
+        await axios.post("https://jsonplaceholder.typicode.com/posts",
           { email, password },
           config
         );
