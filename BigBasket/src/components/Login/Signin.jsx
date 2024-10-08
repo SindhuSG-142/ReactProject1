@@ -40,7 +40,7 @@ import {
           headers: { "Content-type": "application/json" },
         };
       const {data}= await axios.post(
-        "https://jsonplaceholder.typicode.com/posts",
+        "https://jsonplaceholder.org/users",
           { email, password },
           config
         );

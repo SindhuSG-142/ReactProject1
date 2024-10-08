@@ -73,7 +73,7 @@ export const fetchcartaction = (data) => ({
 
 export const fetchtoCart = () => (dispatch) => {
   axios
-    .get("https://web-production-ae8c.up.railway.app/vegetablecart")
+    .get("https://fakestoreapi.com/products")
     .then((res) => {
       // console.log("get", res.data);
       dispatch(fetchcartaction(res.data));
@@ -92,8 +92,8 @@ export const removeItemAction = (data) => {
 
 export const removeItem = (id) => (dispatch) => {
   axios
-    .delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
-    // .delete(`https://rbigbasket.herokuapp.com/vegetablecart/${id}`)
+    .delete(`https://fakestoreapi.com/products/${id}`)
+    
     .then((res) => {
       // console.log(res.data);
       dispatch(removeItemAction(res.data));
@@ -114,8 +114,7 @@ export const setorderaction = (data) => ({
 export const addOrder = (product) => (dispatch) => {
   console.log("DAAA", product);
   axios
-    .post("https://web-production-ae8c.up.railway.app/rasor", product)
-    // .post("https://rbigbasket.herokuapp.com/rasor", product)
+    .post("https://fakestoreapi.com/products", product)
     .then((res) => {
       console.log("....add...", res);
       dispatch(setorderaction(res.data));

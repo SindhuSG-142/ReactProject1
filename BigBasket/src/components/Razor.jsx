@@ -75,8 +75,8 @@ export const Razor = () => {
 
       prefill: {
         name: "BigBasket",
-        email: "rspatil3562@gmail.com",
-        contact: "9075613562",
+        email: "sssss@gmail.com",
+        contact: "90000000",
       },
     };
     const paymentObject = new window.Razorpay(options);
