@@ -24,7 +24,7 @@ export const Navbar = () => {
           <Box mr={"1rem"}>
             <Flex alignItems={"center"}>
               <PhoneIcon mr={"0.5rem"} />
-              <Text>1860 123 1000</Text>
+              <Text>1860 123000</Text>
             </Flex>
           </Box>
           <Box mr={"1rem"}>
@@ -32,7 +32,8 @@ export const Navbar = () => {
               <Box mr={"0.5rem"}>
                 <ImLocation2 size="16px" />
               </Box>
-              <Text>56004 Bangalore</Text>
+              {/* <Text>56004 Bangalore</Text> */}
+              <button>Select Location</button>
             </Flex>
           </Box>
           <Box mr={"1rem"}>

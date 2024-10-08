@@ -21,6 +21,7 @@ import {
   import { MdLocalShipping } from "react-icons/md";
   import { Link as RouterLink } from "react-router-dom";
   import { Topnavbar } from "../Navbar/Topnavbar";
+  
   export const ProductDetails = () => {
     const dispatch = useDispatch();
     const currentProduct = useSelector((state) => state.products.currentProduct);
@@ -29,7 +30,7 @@ import {
     // console.log("DDD",id)
     useEffect(() => {
       dispatch(getSingleProduct(id));
-    }, []);
+    }, [dispatch,id]);
     const handleAddproduct = (currentProduct) => {
       dispatch(addtoCart(currentProduct));
     };

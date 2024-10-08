@@ -6,7 +6,7 @@ import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import Slider from "react-slick";
 // import { img7, img8, img9 } from "./img";
 // import { img1, img2, img3, img4, img5, img6 } from "./img";
-
+import {useState} from 'react'
 // Settings for the slider
 const settings = {
   dots: true,
@@ -23,7 +23,7 @@ const settings = {
 export const ProductSlider=() =>{
   // As we have used custom buttons, we need a reference variable to
   // change the state
-  const [slider, setSlider] = React.useState();
+  const [slider, setSlider] = useState();
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
